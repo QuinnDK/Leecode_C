@@ -45,7 +45,7 @@ int right_bound(vector<int> nums,int target){
         }else if(nums[mid]>target){
             right=mid-1;
         }else if(nums[mid]==target){
-            right=mid+1;
+            left=mid+1;
         }
     }
     if (right<0 || nums[right]!=target){
