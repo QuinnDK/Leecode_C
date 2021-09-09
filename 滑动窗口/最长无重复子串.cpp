@@ -14,6 +14,7 @@ int lenthOfLongestSubstring(string s){
     while(right<s.size()){
         char c=s[right];
         right++;
+        window[c]++;
         while(window[c]>1){
             char d=s[left];
             left++;
