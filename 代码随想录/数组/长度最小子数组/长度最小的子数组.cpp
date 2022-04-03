@@ -12,7 +12,7 @@ int minSubArrayLen(int target, vector<int>& nums) {
             if(sum>=target){
                 lenth=j-i+1;
                 res=res<lenth ? res:lenth;
-                cout<<res<<" ";
+                //cout<<res<<" ";
                 break;
             }
         }
