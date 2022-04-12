@@ -25,9 +25,9 @@ public:
                 return a.finish<b.finish;
             }
         });
-        // for(int i=0;i<records.size();i++){
-        //     cout<<records[i].fragType<<" "<<records[i].fragOffset<<" "<<records[i].finish<<" "<<records[i].length<<" "<<records[i].data<<endl;
-        // }
+        for(int i=0;i<records.size();i++){
+            cout<<records[i].fragType<<" "<<records[i].fragOffset<<" "<<records[i].finish<<" "<<records[i].length<<" "<<records[i].data<<endl;
+        }
         if(records[records.size()-1].fragType<packageType){
             return "NA";
         }

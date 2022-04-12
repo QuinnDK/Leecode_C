@@ -24,3 +24,18 @@ int lenthOfLongestSubstring(string s){
     }
     return res;
 }
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int maxsub = 0, left = 0, pos = 0;
+        vector<bool> used(256, false);
+        while(pos < s.size()){
+            while(used[s[pos]]) used[s[left++]] = false;  
+            maxsub = max(maxsub, pos - left + 1);
+            used[s[pos++]] = true;
+        }
+        return maxsub;
+    }
+};
+

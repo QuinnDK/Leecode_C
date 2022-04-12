@@ -85,7 +85,10 @@
         "numeric": "cpp",
         "scoped_allocator": "cpp",
         "thread": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "strings.h": "c",
+        "string.h": "c",
+        "stdio.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
